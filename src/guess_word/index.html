@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>ARRRRG-divina</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navegador" tabindex="0">
+          <p>A&lt;div>iNa Palabras!!</p>
+          <div id="show" class="erase">
+            <ul id="navi">
+              <li>
+                <button class="acc" id="fondo">
+                  <div id="contraste"></div>
+                </button>
+              </li>
+              <li>
+                <button class="acc" id="mas">
+                  A<sup>+</sup>
+                </button>
+              </li>
+              <li>
+                <button class="acc" id="menos">
+                  A<sup>-</sup>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button id="btn-acc">
+            <img src="./img/nav.svg" alt="navegador">
+          </button>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <h2>Palabra a adivinar</h2>
+      <div class="content">
+        <div class="inputs"></div>
+
+
+        <div class="detalles">
+          <p class="pista" tabindex="0">
+            <strong>Pista: </strong><span></span>
+          </p>
+          <p class="restantes" tabindex="0">
+            <strong>Intentos restantes: </strong><span></span>
+          </p>
+          <p class="letrasErroneas" tabindex="0">
+            <strong>Letras erroneas: </strong><span></span>
+          </p>
+        </div>
+
+        <div class="mostra"></div>
+        
+        <div id="boton">
+          <button class="reset-btn">Adivinar Palabra</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/listado.js"></script>
+    <script src="./js/mensajes.js"></script>
+    <script src="./js/accesibilidad.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

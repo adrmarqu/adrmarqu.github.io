@@ -1,0 +1,6 @@
+Controles
+
+1- '+': Per aumentar el tamany
+2- '-': Per reduir el tamany
+3- 'Alt' (La tecla option/alt): Per a canviar el contraste
+4- 'Esc': Obrir el mode editor/accesibilitat

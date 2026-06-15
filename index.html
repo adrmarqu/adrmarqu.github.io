@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrià Márquez | Web Developer Portfolio</title>
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <header id="header">
+        <a href="#">Adrià Márquez</a>
+        <div id="header-content">
+            <nav>
+                <a href="https://github.com/adrmarqu" target="_blank">
+                    Github
+                </a>
+                <a href="https://www.linkedin.com/in/adria-marquez" target="_blank">
+                    Linkedin
+                </a>
+            </nav>
+            
+            <!-- CONTENEDOR DE CONTROLES (Idioma y Tema) -->
+            <div class="controls-container">
+                <!-- Botón de Modo Oscuro / Claro -->
+                <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+
+                <!-- Selector de Idiomas Desplegable -->
+                <div class="dropdown">
+                    <button id="lang" data-key="lang">Idioma</button>
+                    <div class="dropdown-content">
+                        <button id="lang-en" data-key="lang-en">English</button>
+                        <button id="lang-es" data-key="lang-es">Español</button>
+                        <button id="lang-ca" data-key="lang-ca">Catalan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Curriculum</h2>
+        <section>
+            <!-- Sección CV -->
+            <a href="./cv/cv-adrmarqu.pdf" download="cv-adrmarqu.pdf" data-key="down">
+                Descargar CV (PDF)
+            </a>
+            <a href="https://www.linkedin.com/in/adria-marquez" target="_blank" data-key="link-cv">Linkedin</a>
+        </section>
+
+        <h2 style="text-align: center;">Projects</h2>
+        <section>
+            <!-- PONG -->
+            <article class="project-card">
+                <a href="https://github.com/adrmarqu/ft_transcendence" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/codelive.png" alt="ft_transcendence" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-pong">Pong</h3>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">NodeJs</span>
+                        <span class="tag">PostgreSql</span>
+                        <span class="tag">Docker</span>
+                    </div>
+
+                    <p data-key="desc-pong">Descripción del juego Pong...</p>
+
+                    <div class="btn-container">
+                        <a href="https://github.com/adrmarqu/ft_transcendence" target="_blank" data-key="btn-codigo-pong">Código</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Codelive -->
+            <article class="project-card">
+                <a href="https://codelive-pvo7.vercel.app/" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/codelive.png" alt="CodeLive" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-codelive">Codelive</h3>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">NodeJs</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Vercel & Render</span>
+                    </div>
+
+                    <p data-key="desc-codelive">Descripción de CodeLive...</p>
+
+                    <div class="btn-container">
+                        <a href="https://codelive-pvo7.vercel.app/" target="_blank" data-key="btn-web-codelive">Página</a>
+                        <a href="https://github.com/adrmarqu/codelive" target="_blank" data-key="btn-codigo-codelive">Código</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Camagru -->
+            <article class="project-card">
+                <a href="https://github.com/adrmarqu/camagru" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/codelive.png" alt="Camagru" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-camagru">Camagru</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
+                    </div>
+
+                    <p data-key="desc-camagru">Descripción de Camagru...</p>
+
+                    <div class="btn-container">
+                        <a href="https://github.com/adrmarqu/camagru" target="_blank" data-key="btn-codigo-camagru">Código</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Words -->
+            <article class="project-card">
+                <a href="./src/guess_word/index.html" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/word.png" alt="Words" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-words">Word guessing game</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                    <p data-key="desc-words">Descripción de juego de palabras...</p>
+
+                    <div class="btn-container">
+                        <a href="./src/guess_word/index.html" target="_blank" data-key="btn-web-words">Página</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Numbers -->
+            <article class="project-card">
+                <a href="./src/guess_number/index.html" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/number.png" alt="Numbers" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-numbers">Number guessing game</h3>
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                    <p data-key="desc-numbers">Descripción de juego de números...</p>
+
+                    <div class="btn-container">
+                        <a href="./src/guess_number/index.html" target="_blank" data-key="btn-web-numbers">Página</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p data-key="footer-copy">© 2026 adrmarqu. Desarrollado con HTML, CSS y JS.</p>
+        <p><span data-key="footer-talk">¿Hablamos?</span> <a href="mailto:adria.marquez.3b@gmail.com">adria.marquez.3b@gmail.com</a></p>
+    </footer>
 </body>
 </html>

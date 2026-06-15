@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de adivinar un número random</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <main>
+      <header role="banner">
+        <h1 class="flex-vcenter">
+          Juego a&lt;div>iNa!
+          <span id="menu" class="flex-vcenter">
+            <div id="contrast" tabindex="0"></div>
+            <div id="font-up" tabindex="0">A<sup>+</sup></div>
+            <div id="font-down" tabindex="0">A<sup>-</sup></div>
+          </span>
+        </h1>
+      </header>
+
+      <div id="paso1" class="flex-column">
+        <label tabindex="0">Antes de empezar, por favor dinos tu nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <button type="button" id="continuar1" name="continuar1">
+          Continuar
+        </button>
+        <small id="error1" name="error1"></small>
+      </div>
+      
+      <div id="paso2" class="flex-column erase" tabindex="0">
+        <p id="enunciado" tabindex="0"></p>
+        
+        <div id="num1" class="flex-column">
+          <label for="numMin" tabindex="0">Escribe un número entre el 1 y el 10:</label>
+          <input type="text" name="numMin" id="numMin" />
+          
+          <button type="button" id="continuar2">
+            Continuar
+          </button>
+          <small id="error2" name="error2"></small>
+        </div>
+
+        <div id="num2" class="flex-column">
+          <label for="numMax" tabindex="0">Escribe un número entre el 30 y el 40:</label>
+          <input type="text" name="numMax" id="numMax" />
+          
+          <button type="button" id="continuar3">Continuar</button>
+          <small id="error3" name="error3"></small>
+        </div>
+      </div>
+
+      <div id="juegoBtns" class="erase">
+        <div id="enunciado2" tabindex="0"></div>
+        <div id="botones" class="all-numbers"></div>
+      </div>
+      <small id="error4" name="error4" tabindex="0"></small>
+      
+      <div id="deNuevo" class="erase flex-vcenter" tabindex="0">
+        <p tabindex="0">¿Te gustaría volver a jugar?</p>
+        <div>
+          <button id="reset">Volver a jugar</button>
+          <button id="no">Salir</button>
+        </div>
+      </div>
+    </main>
+  </body>
+ <!--  <footer role="contentinfo">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </footer> -->
+</html>

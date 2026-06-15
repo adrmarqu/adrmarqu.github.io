@@ -1,0 +1,191 @@
+*, *::before, *::after, html, body
+{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --colorN: white;
+    --colorC: black;
+}
+
+body
+{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+header
+{
+    height: 95px;
+    margin-bottom: 15px;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+}
+
+nav
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#navegador
+{
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navegador p
+{
+    font-size: 35px;
+}
+
+main
+{
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-top: 1px solid transparent;
+}
+
+h2
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.reset-btn
+{
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+
+    background-color: darkcyan;
+    cursor: pointer;;
+}
+
+.reset-btn:hover
+{
+    border: 1px solid transparent;
+    color: black;
+    background-color: lightgray;
+}
+
+.inputs
+{
+    margin-bottom: 30px;
+    padding: 25px 0 20px 0;
+
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid rgb(230, 230, 230);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inputs input
+{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+
+    user-select: none;
+    pointer-events: none;
+
+    border: 1px solid gray;
+    color: green;
+    background-color: white;
+}
+
+.detalles p
+{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.detalles p strong
+{
+    margin-right: 20px;
+}
+
+#navi
+{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.acc
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.acc:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.mostra
+{
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+:focus
+{
+    outline: 2px solid red;
+}
+
+.erase
+{
+    display: none;
+}
+
+#contraste
+{
+    width: 15px;
+    height: 15px;
+
+    margin-left: 3.5px;
+
+    border: 3px solid var(--colorN);
+    border-radius: 50%;
+
+    background: linear-gradient(to right, var(--colorN) 50%, var(--colorC) 50%);
+}
+
+#fondo:hover #contraste
+{
+    --colorN: black;
+    --colorC: white;
+}
+
+#btn-acc
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+.bg-black, nav, .acc, #btn-acc
+{
+    background-color: black;
+}
+
+.text-white, #navegador p, .acc, #navi, .reset-btn
+{
+    color: white;
+}
