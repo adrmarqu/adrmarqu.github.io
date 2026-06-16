@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrià Márquez | Web Developer Portfolio</title>
 
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
     <link rel="stylesheet" href="./css/style.css">
+
+    <script type="module" src="./js/header.js" defer></script>
+    <script type="module" src="./js/script.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -26,12 +31,12 @@
                 <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
 
                 <!-- Selector de Idiomas Desplegable -->
-                <div class="dropdown">
-                    <button id="lang" data-key="lang">Idioma</button>
+                <div id="lang-dropdown" class="dropdown">
+                    <button id="lang" data-key="lang">Español</button>
                     <div class="dropdown-content">
-                        <button id="lang-en" data-key="lang-en">English</button>
-                        <button id="lang-es" data-key="lang-es">Español</button>
-                        <button id="lang-ca" data-key="lang-ca">Catalan</button>
+                        <button id="lang-en" data-key="lang-en" value="en">English</button>
+                        <button id="lang-es" data-key="lang-es" value="es">Español</button>
+                        <button id="lang-ca" data-key="lang-ca" value="ca">Catalan</button>
                     </div>
                 </div>
             </div>
@@ -47,7 +52,7 @@
             <a href="https://www.linkedin.com/in/adria-marquez" target="_blank" data-key="link-cv">Linkedin</a>
         </section>
 
-        <h2 style="text-align: center;">Projects</h2>
+        <h2 style="text-align: center;">Proyectos</h2>
         <section>
             <!-- PONG -->
             <article class="project-card">
