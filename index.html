@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adrià Márquez | Web Developer Portfolio</title>
 
-    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -14,7 +14,7 @@
 </head>
 <body>
     <header id="header">
-        <a href="#">Adrià Márquez</a>
+        <a href="#">Adrià Márquez Nebot</a>
         <div id="header-content">
             <nav>
                 <a href="https://github.com/adrmarqu" target="_blank">
@@ -43,7 +43,7 @@
         </div>
     </header>
     <main>
-        <h2 style="text-align: center;">Curriculum</h2>
+        <h2 style="text-align: center;" data-key="cv">Currículum</h2>
         <section>
             <!-- Sección CV -->
             <a href="./cv/cv-adrmarqu.pdf" download="cv-adrmarqu.pdf" data-key="down">
@@ -52,12 +52,36 @@
             <a href="https://www.linkedin.com/in/adria-marquez" target="_blank" data-key="link-cv">Linkedin</a>
         </section>
 
-        <h2 style="text-align: center;">Proyectos</h2>
+        <h2 style="text-align: center;" data-key="project">Proyectos</h2>
         <section>
+            <!-- La Lluna -->
+            <article class="project-card">
+                <a href="https://la-lluna.es" target="_blank" class="link-image">
+                    <img class="project-thumbnail" src="./assets/lalluna.webp" alt="la-lluna" title="Project image">
+                </a>
+
+                <div class="project-info">
+                    <h3 data-key="title-lluna">LaLluna</h3>
+                    <div class="tags">
+                        <span class="tag">Wordpress</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Elementor</span>
+                    </div>
+
+                    <p data-key="desc-lluna">
+                        Página web de una guarderia hecha con WordPress que incluye tanto las reseñas de Google como las fotos de Instagram.
+                    </p>
+
+                    <div class="btn-container">
+                        <a href="https://la-lluna.es" target="_blank" data-key="btn-web-codelive">Página</a>
+                    </div>
+                </div>
+            </article>
             <!-- PONG -->
             <article class="project-card">
                 <a href="https://github.com/adrmarqu/ft_transcendence" target="_blank" class="link-image">
-                    <img class="project-thumbnail" src="./assets/codelive.png" alt="ft_transcendence" title="Project image">
+                    <img class="project-thumbnail" src="./assets/codelive.webp" alt="ft_transcendence" title="Project image">
                 </a>
 
                 <div class="project-info">
@@ -84,7 +108,7 @@
             <!-- Codelive -->
             <article class="project-card">
                 <a href="https://codelive-pvo7.vercel.app/" target="_blank" class="link-image">
-                    <img class="project-thumbnail" src="./assets/codelive.png" alt="CodeLive" title="Project image">
+                    <img class="project-thumbnail" src="./assets/codelive.webp" alt="CodeLive" title="Project image">
                 </a>
 
                 <div class="project-info">
@@ -113,7 +137,7 @@
             <!-- Camagru -->
             <article class="project-card">
                 <a href="https://github.com/adrmarqu/camagru" target="_blank" class="link-image">
-                    <img class="project-thumbnail" src="./assets/codelive.png" alt="Camagru" title="Project image">
+                    <img class="project-thumbnail" src="./assets/codelive.webp" alt="Camagru" title="Project image">
                 </a>
 
                 <div class="project-info">
@@ -138,7 +162,7 @@
             <!-- Words -->
             <article class="project-card">
                 <a href="./src/guess_word/index.html" target="_blank" class="link-image">
-                    <img class="project-thumbnail" src="./assets/word.png" alt="Words" title="Project image">
+                    <img class="project-thumbnail" src="./assets/word.webp" alt="Words" title="Project image">
                 </a>
 
                 <div class="project-info">
@@ -154,7 +178,7 @@
                     </p>
 
                     <div class="btn-container">
-                        <a href="./src/guess_word/index.html" target="_blank" data-key="btn-web-words">Página</a>
+                        <a href="./src/guess_word/index.html" target="_blank" data-key="btn-web-codelive">Página</a>
                     </div>
                 </div>
             </article>
@@ -162,7 +186,7 @@
             <!-- Numbers -->
             <article class="project-card">
                 <a href="./src/guess_number/index.html" target="_blank" class="link-image">
-                    <img class="project-thumbnail" src="./assets/number.png" alt="Numbers" title="Project image">
+                    <img class="project-thumbnail" src="./assets/number.webp" alt="Numbers" title="Project image">
                 </a>
 
                 <div class="project-info">
@@ -178,7 +202,7 @@
                     </p>
 
                     <div class="btn-container">
-                        <a href="./src/guess_number/index.html" target="_blank" data-key="btn-web-numbers">Página</a>
+                        <a href="./src/guess_number/index.html" target="_blank" data-key="btn-web-codelive">Página</a>
                     </div>
                 </div>
             </article>

@@ -1,15 +1,14 @@
-/* ==========================================================================
-   RESET & VARIABLES GLOBALES (Modo Oscuro por defecto)
-   ========================================================================== */
-* {
+*, *::before, *::after
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-:root {
-    /* Variables Modo Oscuro (Predeterminado) */
+/* Dark mode */
+:root
+{
     --bg-main: #0f172a;       /* Fondo oscuro profundo */
     --bg-card: #1e293b;       /* Fondo de tarjetas y header */
     --bg-tag: #334155;        /* Fondo de las etiquetas de tecnología */
@@ -20,11 +19,9 @@
     --border: #334155;        /* Bordes sutiles */
     --max-width: 1000px;
 }
-
-/* ==========================================================================
-   VARIABLES PARA MODO CLARO
-   ========================================================================== */
-body.light-mode {
+/* Light mode */
+body.light-mode
+{
     --bg-main: #f8fafc;       /* Fondo gris muy claro */
     --bg-card: #ffffff;       /* Tarjetas y header completamente blancos */
     --bg-tag: #e2e8f0;        /* Etiquetas gris claro */
@@ -35,7 +32,8 @@ body.light-mode {
     --border: #e2e8f0;        /* Bordes claros sutiles */
 }
 
-body {
+body
+{
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.6;
@@ -43,10 +41,8 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ==========================================================================
-   HEADER & NAVEGACIÓN
-   ========================================================================== */
-#header {
+#header
+{
     background-color: var(--bg-card);
     border-bottom: 1px solid var(--border);
     position: sticky;
@@ -59,7 +55,8 @@ body {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-#header > a {
+#header > a
+{
     color: var(--text-main);
     font-weight: 700;
     font-size: 1.2rem;
@@ -67,22 +64,26 @@ body {
     transition: color 0.2s;
 }
 
-#header > a:hover {
+#header > a:hover
+{
     color: var(--accent);
 }
 
-#header-content {
+#header-content
+{
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-nav {
+nav
+{
     display: flex;
     gap: 20px;
 }
 
-nav a {
+nav a
+{
     color: var(--text-muted);
     text-decoration: none;
     font-weight: 500;
@@ -90,19 +91,22 @@ nav a {
     transition: color 0.2s;
 }
 
-nav a:hover {
+nav a:hover
+{
     color: var(--text-main);
 }
 
 /* Contenedor de Controles (Tema e Idioma alineados) */
-.controls-container {
+.controls-container
+{
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
 /* Botón de Alternancia de Tema (Luna/Sol) */
-#theme-toggle {
+#theme-toggle
+{
     background-color: var(--bg-tag);
     border: 1px solid var(--border);
     color: var(--text-main);
@@ -115,19 +119,14 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
-
-#theme-toggle:hover {
+#theme-toggle:hover
+{
     border-color: var(--accent);
     transform: scale(1.05);
 }
 
-/* Selector de Idiomas y Dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-#lang {
+#lang
+{
     background-color: var(--bg-tag);
     color: var(--text-main);
     border: 1px solid var(--border);
@@ -138,14 +137,20 @@ nav a:hover {
     font-size: 0.9rem;
     transition: all 0.2s;
 }
-
-#lang:hover {
+#lang:hover
+{
     border-color: var(--accent);
     color: var(--accent);
 }
 
-/* Menú Desplegable (Dropdown Content) */
-.dropdown-content {
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
     display: none; 
     position: absolute;
     right: -25%;
@@ -159,13 +164,14 @@ nav a:hover {
     z-index: 10;
 }
 
-/* Desplegar al pasar el ratón por encima del contenedor */
-.dropdown.open .dropdown-content {
+.dropdown.open .dropdown-content
+{
     display: flex;
     flex-direction: column;
 }
 
-.dropdown-content button {
+.dropdown-content button
+{
     background: none;
     border: none;
     color: var(--text-muted);
@@ -177,22 +183,27 @@ nav a:hover {
     transition: background 0.2s, color 0.2s;
 }
 
-.dropdown-content button:hover {
+.dropdown-content button:hover
+{
     background-color: var(--bg-tag);
     color: var(--accent);
 }
 
-/* ==========================================================================
-   CONTENIDO PRINCIPAL (MAIN)
-   ========================================================================== */
-main {
+main
+{
     max-width: var(--max-width);
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Sección superior: Currículum */
-main > section:first-of-type {
+h2
+{
+    margin-bottom: 10px;
+}
+
+/* Currículum section */
+main > section:first-of-type
+{
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -204,7 +215,8 @@ main > section:first-of-type {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-main > section:first-of-type a {
+main > section:first-of-type a
+{
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
@@ -215,36 +227,40 @@ main > section:first-of-type a {
     transition: transform 0.2s, background-color 0.2s;
 }
 
-/* Botón descargar CV (Rojo PDF con buen contraste) */
-main > section:first-of-type a[data-key="down"] {
+/* Download CV button */
+main > section:first-of-type a[data-key="down"]
+{
     background-color: #ef4444; 
     color: #ffffff;
 }
-main > section:first-of-type a[data-key="down"]:hover {
+main > section:first-of-type a[data-key="down"]:hover
+{
     background-color: #dc2626;
     transform: translateY(-2px);
 }
 
-/* Botón LinkedIn (Azul oficial) */
-main > section:first-of-type a[data-key="link-cv"] {
+/* LinkedIn button */
+main > section:first-of-type a[data-key="link-cv"]
+{
     background-color: #0077b5; 
     color: #ffffff;
 }
-main > section:first-of-type a[data-key="link-cv"]:hover {
+main > section:first-of-type a[data-key="link-cv"]:hover
+{
     background-color: #005987;
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   TARJETAS DE PROYECTOS (GRID)
-   ========================================================================== */
-main > section:last-of-type {
+/* Cards */
+main > section:last-of-type
+{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
-.project-card {
+.project-card
+{
     background-color: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -254,21 +270,24 @@ main > section:last-of-type {
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.project-card:hover {
+.project-card:hover
+{
     transform: translateY(-5px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
-/* Fijar color de borde de tarjeta específico en modo oscuro para que resalte */
-body:not(.light-mode) .project-card:hover {
+body:not(.light-mode) .project-card:hover 
+{
     border-color: #475569;
 }
-body.light-mode .project-card:hover {
+body.light-mode .project-card:hover
+{
     border-color: #cbd5e1;
 }
 
-/* Imagen del proyecto */
-.link-image {
+/* Project image */
+.link-image 
+{
     display: block;
     height: 180px;
     overflow: hidden;
@@ -276,40 +295,46 @@ body.light-mode .project-card:hover {
     transition: border-color 0.3s ease;
 }
 
-.project-thumbnail {
+.project-thumbnail
+{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 
-.project-card:hover .project-thumbnail {
+.project-card:hover .project-thumbnail
+{
     transform: scale(1.05);
 }
 
-/* Información del proyecto */
-.project-info {
+/* Project information */
+.project-info
+{
     padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
 }
 
-.project-info h3 {
+.project-info h3
+{
     font-size: 1.3rem;
     color: var(--text-main);
     margin-bottom: 12px;
 }
 
-/* Tecnologías (Tags) */
-.tags {
+/* Tags */
+.tags
+{
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-bottom: 15px;
 }
 
-.tag {
+.tag
+{
     background-color: var(--bg-tag);
     color: var(--accent);
     font-size: 0.75rem;
@@ -320,21 +345,24 @@ body.light-mode .project-card:hover {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-.project-info p {
+.project-info p
+{
     color: var(--text-muted);
     font-size: 0.95rem;
     margin-bottom: 20px;
     flex-grow: 1; 
 }
 
-/* Botones de acción dentro de la tarjeta */
-.btn-container {
+/* Card buttons */
+.btn-container
+{
     display: flex;
     gap: 10px;
-    margin-top: auto; /* Fuerza a los botones a alinearse abajo del todo */
+    margin-top: auto;
 }
 
-.btn-container a {
+.btn-container a
+{
     flex: 1;
     text-align: center;
     padding: 10px;
@@ -345,36 +373,38 @@ body.light-mode .project-card:hover {
     transition: all 0.2s ease;
 }
 
-/* Botón Primario (Página / Demo en vivo) */
-.btn-container a:not([data-key*="btn-codigo"]) {
+/* Primary button */
+.btn-container a:not([data-key*="btn-codigo"])
+{
     background-color: var(--accent);
     color: var(--bg-main);
 }
-.btn-container a:not([data-key*="btn-codigo"]):hover {
+.btn-container a:not([data-key*="btn-codigo"]):hover
+{
     background-color: var(--accent-hover);
 }
 
-/* Asegurar que el texto sea blanco si el botón primario está en modo claro */
-body.light-mode .btn-container a:not([data-key*="btn-codigo"]) {
+body.light-mode .btn-container a:not([data-key*="btn-codigo"])
+{
     color: #ffffff;
 }
 
-/* Botón Secundario (Código / Repositorio GitHub) */
+/* Secondary button */
 .btn-container a[data-key*="btn-codigo"],
-.btn-container a:only-child { 
+.btn-container a:only-child
+{ 
     background-color: transparent;
     color: var(--text-main);
     border: 1px solid var(--border);
 }
 .btn-container a[data-key*="btn-codigo"]:hover,
-.btn-container a:only-child:hover {
+.btn-container a:only-child:hover
+{
     background-color: var(--bg-tag);
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-footer {
+footer
+{
     max-width: var(--max-width);
     margin: 60px auto 0 auto;
     padding: 30px 20px;
@@ -383,57 +413,65 @@ footer {
     transition: border-color 0.3s ease;
 }
 
-footer p {
+footer p
+{
     color: var(--text-muted);
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
 
-footer a {
+footer a
+{
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
 }
 
-footer a:hover {
+footer a:hover
+{
     text-decoration: underline;
 }
 
-/* ==========================================================================
-   RESPONSIVE (MÓVILES)
-   ========================================================================== */
-@media (max-width: 600px) {
-    #header {
+/* Responsive mobile */
+@media (max-width: 600px)
+{
+    #header
+    {
         flex-direction: column;
         gap: 15px;
         text-align: center;
         padding: 15px;
     }
     
-    #header-content {
+    #header-content
+    {
         width: 100%;
         flex-direction: column;
         gap: 15px;
     }
 
-    nav {
+    nav
+    {
         width: 100%;
         justify-content: center;
         gap: 25px;
     }
 
-    .controls-container {
+    .controls-container
+    {
         width: 100%;
         justify-content: center;
         gap: 20px;
     }
 
-    main > section:first-of-type {
+    main > section:first-of-type
+    {
         flex-direction: column;
         padding: 20px;
     }
     
-    main > section:first-of-type a {
+    main > section:first-of-type a
+    {
         width: 100%;
     }
 }

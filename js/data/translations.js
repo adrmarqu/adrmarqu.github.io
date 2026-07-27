@@ -3,8 +3,12 @@ export const translations =
     "es":
     {
         "lang": "Español",
+        "cv": "Currículum",
         "down": "Descargar CV (PDF)",
         "link-cv": "Linkedin",
+        "project": "Proyectos",
+        "title-lluna": "La Lluna",
+        "desc-lluna": "Página web de una guarderia hecha con WordPress que incluye tanto las reseñas de Google como las fotos de Instagram.",
         "title-pong": "Pong",
         "desc-pong": "Página web con el juego del Pong hecha por 4 personas, con chat y la posibilidad de jugar entre amigos.",
         "btn-codigo-pong": "Código",
@@ -27,8 +31,12 @@ export const translations =
     "en":
     {
         "lang": "English",
+        "cv": "Resume",
         "down": "Download CV (PDF)",
         "link-cv": "Linkedin",
+        "project": "Projects",
+        "title-lluna": "La Lluna",
+        "desc-lluna": "A website for a daycare center made with WordPress that includes both Google reviews and Instagram photos.",
         "title-pong": "Pong",
         "desc-pong": "Web application featuring the Pong game developed by 4 people, including chat and multiplayer rooms.",
         "btn-codigo-pong": "Code",
@@ -51,8 +59,12 @@ export const translations =
     "ca":
     {
         "lang": "Català",
+        "cv": "Currículum",
         "down": "Descarregar CV (PDF)",
         "link-cv": "Linkedin",
+        "project": "Projectes",
+        "title-lluna": "La Lluna",
+        "desc-lluna": "Pàgina web d'una guarderia feta amb WordPress que inclou tant les resenyes de Google com les fotos d'Instagram.",
         "title-pong": "Pong",
         "desc-pong": "Pàgina web amb el joc del Pong feta per 4 persones, amb xat i la possibilitat de jugar entre amics.",
         "btn-codigo-pong": "Codi",
