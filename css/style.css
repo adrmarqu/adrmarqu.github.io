@@ -291,7 +291,9 @@ body.light-mode .project-card:hover
     display: block;
     height: 180px;
     overflow: hidden;
+    position: relative;
     border-bottom: 1px solid var(--border);
+    text-decoration: none;
     transition: border-color 0.3s ease;
 }
 
@@ -306,6 +308,127 @@ body.light-mode .project-card:hover
 .project-card:hover .project-thumbnail
 {
     transform: scale(1.05);
+}
+
+/* Placeholder for projects in progress / without thumbnail */
+.project-placeholder
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: radial-gradient(circle at 50% 35%, rgba(56, 189, 248, 0.12), transparent 70%),
+                linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
+    transition: background 0.3s ease, transform 0.4s ease;
+}
+
+body.light-mode .project-placeholder
+{
+    background: radial-gradient(circle at 50% 35%, rgba(2, 132, 199, 0.1), transparent 70%),
+                linear-gradient(135deg, #f8fafc, #e2e8f0);
+}
+
+.project-card:hover .project-placeholder
+{
+    transform: scale(1.03);
+}
+
+.placeholder-icon
+{
+    color: var(--accent);
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .placeholder-icon
+{
+    transform: scale(1.1) rotate(6deg);
+    opacity: 1;
+}
+
+.placeholder-text
+{
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* Floating Status Badges */
+.status-badge
+{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    border-radius: 9999px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.03em;
+    pointer-events: none;
+}
+
+.status-badge.in-progress
+{
+    background-color: rgba(234, 179, 8, 0.18);
+    color: #facc15;
+    border: 1px solid rgba(234, 179, 8, 0.45);
+}
+
+body.light-mode .status-badge.in-progress
+{
+    background-color: rgba(202, 138, 4, 0.12);
+    color: #a16207;
+    border: 1px solid rgba(202, 138, 4, 0.35);
+}
+
+/* Glowing pulsating dot */
+.status-dot
+{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: currentColor;
+    position: relative;
+    display: inline-block;
+}
+
+.status-dot::after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background-color: currentColor;
+    opacity: 0.6;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse
+{
+    0%, 100%
+    {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50%
+    {
+        transform: scale(2.2);
+        opacity: 0;
+    }
 }
 
 /* Project information */
@@ -390,15 +513,13 @@ body.light-mode .btn-container a:not([data-key*="btn-codigo"])
 }
 
 /* Secondary button */
-.btn-container a[data-key*="btn-codigo"],
-.btn-container a:only-child
+.btn-container a[data-key*="btn-codigo"]
 { 
     background-color: transparent;
     color: var(--text-main);
     border: 1px solid var(--border);
 }
-.btn-container a[data-key*="btn-codigo"]:hover,
-.btn-container a:only-child:hover
+.btn-container a[data-key*="btn-codigo"]:hover
 {
     background-color: var(--bg-tag);
 }
