@@ -20,7 +20,13 @@ i18n
 .init(
 {
     resources,
-    fallbackLng: 'es',
+    fallbackLng: 'en',
+    supportedLngs: ['es', 'en', 'ca'],
+    nonExplicitSupportedLngs: true,
+    detection: {
+        order: ['localStorage', 'navigator'],
+        caches: ['localStorage']
+    },
     interpolation: { escapeValue: false }
 });
 
