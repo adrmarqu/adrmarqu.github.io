@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Project & Experience Card Styles
+   ========================================================================== */
+
+.card-portfolio {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.75rem;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    transition: all var(--transition-base);
+    position: relative;
+    backdrop-filter: blur(8px);
+
+    &:hover {
+        background: var(--bg-card-hover);
+        border-color: var(--border-color-hover);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+
+        .card-media {
+            .is-preview-view img {
+                transform: scale(1.05);
+            }
+
+            .is-logo-view .logo-badge {
+                transform: scale(1.08);
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+                border-color: var(--border-accent);
+            }
+        }
+
+        .card-content .card-title,
+        .card-content h3,
+        .card-title {
+            color: var(--badge-text);
+        }
+    }
+
+    /* Left / Media Column */
+    .card-media {
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+
+        .card-date {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            color: var(--text-muted);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .media-preview-box {
+            width: 100%;
+            height: 125px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            /* Full Screenshot / Preview Mode */
+            &.is-preview-view {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center top;
+                    transition: transform var(--transition-smooth);
+                }
+            }
+
+            /* Logo / Institution / Studio Mode */
+            &.is-logo-view {
+                background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+
+                .logo-badge {
+                    width: 76px;
+                    height: 76px;
+                    border-radius: var(--radius-md);
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.65rem;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+                    transition: transform var(--transition-smooth), box-shadow var(--transition-fast), border-color var(--transition-fast);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+
+        /* Project State Placeholder */
+        .project-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            color: var(--text-muted);
+
+            .placeholder-icon {
+                color: var(--text-accent);
+                opacity: 0.8;
+                animation: pulse 3s infinite ease-in-out;
+            }
+
+            .placeholder-text {
+                font-size: var(--font-size-xs);
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--text-secondary);
+            }
+        }
+
+        /* Action Links */
+        .card-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            width: 100%;
+
+            .card-btn-link {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.35rem;
+                flex: 1;
+                min-width: fit-content;
+                padding: 0.4rem 0.75rem;
+                border-radius: var(--radius-sm);
+                border: 1px solid var(--border-color);
+                background: var(--bg-surface);
+                color: var(--text-secondary);
+                font-size: var(--font-size-xs);
+                font-weight: 600;
+                transition: all var(--transition-fast);
+
+                &:hover {
+                    background: var(--bg-accent);
+                    border-color: var(--border-accent);
+                    color: var(--text-accent);
+                    transform: translateY(-1px);
+                }
+
+                svg {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+    }
+
+    /* Right / Content Column */
+    .card-content {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.65rem;
+
+        h3
+        {
+            color: var(--text-primary);
+            transition: color var(--transition-fast);
+        }
+
+        .card-title {
+            font-size: var(--font-size-lg);
+            font-weight: 700;
+            color: var(--text-primary);
+            transition: color var(--transition-fast);
+        }
+
+        .card-meta {
+            font-size: var(--font-size-sm);
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .card-desc {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            line-height: var(--line-height-normal);
+        }
+
+        .card-tags {
+            margin-top: auto;
+            padding-top: 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive query for Card */
+@media (max-width: 650px) {
+    .card-portfolio {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 1.25rem;
+
+        .card-media .media-preview-box {
+            height: 160px;
+        }
+    }
+}

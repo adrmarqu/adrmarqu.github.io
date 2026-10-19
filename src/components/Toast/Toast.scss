@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Toast Notification Styles
+   ========================================================================== */
+
+.toast-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-lg);
+    color: var(--text-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    animation: toastSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+    .toast-icon {
+        color: var(--text-accent);
+        display: flex;
+        align-items: center;
+    }
+}
+
+@keyframes toastSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    .toast-container {
+        bottom: 1.5rem;
+        right: 50%;
+        transform: translateX(50%);
+        width: max-content;
+        max-width: 90vw;
+    }
+}

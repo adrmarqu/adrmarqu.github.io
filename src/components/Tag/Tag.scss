@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Tag / Skill Badge Styles
+   ========================================================================== */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border: 1px solid var(--badge-border);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+
+    &:hover {
+        background-color: var(--bg-accent-hover);
+        border-color: var(--border-color-hover);
+        transform: translateY(-1px);
+    }
+}

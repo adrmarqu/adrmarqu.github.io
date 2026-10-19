@@ -1,0 +1,203 @@
+{
+    "web":
+    [
+        {
+            "id": "lluna",
+            "src": "/assets/previews/web/lluna.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/codelive",
+            "web": "https://la-lluna.es",
+            "game": null,
+            "tags": ["WordPress", "PHP", "MySQL"]
+        },
+
+        {
+            "id": "codelive",
+            "src": "/assets/previews/web/codelive.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/codelive",
+            "web": "https://codelive-pvo7.vercel.app",
+            "game": null,
+            "tags": ["React", "JavaScript", "Node.js", "PostgreSQL (Neon)", "Docker", "Vercel", "Render"]
+        },
+
+        {
+            "id": "pong",
+            "src": "/assets/previews/web/pong.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/ft_transcendence",
+            "web": null,
+            "game": null,
+            "tags": ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker"]
+        },
+
+        {
+            "id": "camagru",
+            "src": "/assets/previews/web/camagru.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/camagru",
+            "web": null,
+            "game": null,
+            "tags": ["PHP", "JavaScript", "MySQL", "Docker", "Nginx"]
+        },
+
+        {
+            "id": "webforge",
+            "src": "/assets/previews/web/webforge.webp",
+            "state": "In progress",
+            "git": "https://github.com/adrmarqu/WebForge",
+            "web": null,
+            "game": null,
+            "tags": ["React", "TypeScript", "SCSS", "Node.js", "PostgreSQL (Neon)"]
+        }
+    ],
+
+    "software":
+    [
+        {
+            "id": "webserv",
+            "src": "/assets/previews/software/webserv.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/webserv",
+            "web": null,
+            "game": null,
+            "tags": ["C++", "Network Programming", "HTTP Protocol", "Object-oriented Programming", "Unix Systems"]
+        },
+
+        {
+            "id": "inception",
+            "src": "/assets/previews/software/inception.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/inception",
+            "web": null,
+            "game": null,
+            "tags": ["Docker", "DevOps", "Containers", "System Administration"]
+        },
+
+        {
+            "id": "minirt",
+            "src": "/assets/previews/software/mini.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/miniRT",
+            "web": null,
+            "game": null,
+            "tags": ["C", "Graphics", "Raytracing", "Algorithms & AI", "Mathematics"]
+        },
+
+        {
+            "id": "philo",
+            "src": "/assets/previews/software/philo.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/philosophers",
+            "web": null,
+            "game": null,
+            "tags": ["C", "Concurrency", "Multithreading", "Unix Systems"]
+        },
+
+        {
+            "id": "minishell",
+            "src": "/assets/previews/software/minishell.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/minishell",
+            "web": null,
+            "game": null,
+            "tags": ["C", "Unix Systems Programming", "Process Management", "Parsing"]
+        }
+    ],
+
+    "game":
+    [
+        {
+            "id": "scarecrow",
+            "src": "/assets/logos/scarecrow.webp",
+            "state": "Completed",
+            "git": null,
+            "game": null,
+            "web": "https://scarecrow-studio.com/games/",
+            "tags": ["QA Testing", "Bug Tracking", "Game Design", "Quality Assurance", "Debugging"]
+        },
+
+        {
+            "id": "play",
+            "src": "/assets/previews/playwithme.webp",
+            "state": "Under maintenance",
+            "git": null,
+            "web": null,
+            "game": null,
+            "tags": ["Unity", "C#", "3D"]
+        },
+
+        {
+            "id": "run",
+            "src": "/assets/previews/run3d.webp",
+            "state": "Under maintenance",
+            "git": null,
+            "web": null,
+            "game": null,
+            "tags": ["Unity", "C#", "3D"]
+        },
+
+        {
+            "id": "escape",
+            "src": "/assets/previews/escape.webp",
+            "state": "Under maintenance",
+            "git": null,
+            "web": null,
+            "game": null,
+            "tags": ["Unity", "C#", "2D"]
+        },
+
+        {
+            "id": "isaac",
+            "src": "/assets/previews/game/isaac.webp",
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/IssacGame",
+            "web": null,
+            "game": "https://adrmarqu.itch.io/isaac-the-game",
+            "tags": ["Phaser", "JavaScript", "2D", "Pixel Art", "Roguelike", "Top-Down"]
+        }
+    ],
+
+    "education":
+    [
+        {
+            "id": "outer",
+            "src": "/assets/logos/42.webp",
+            "state": "Completed",
+            "git": null,
+            "game": null,
+            "web": "https://www.42barcelona.com",
+            "tags": ["Full Stack Web", "Cloud & DevOps", "CI/CD", "Networking", "Docker", "Django", "WebSockets", "Git / Github"]
+        },
+
+        {
+            "id": "web",
+            "src": "/assets/logos/cifo.webp",
+            "state": "Completed",
+            "git": null,
+            "web": "https://cifovirtual.cat",
+            "game": null,
+            "tags": ["PHP", "Node.js", "React", "API REST", "JavaScript", "MySQL", "XML", "Bootstrap", "Git / Github"]
+        },
+
+        {
+            "id": "common",
+            "src": "/assets/logos/42.webp",
+            "state": "Completed",
+            "git": null,
+            "game": null,
+            "web": "https://www.42barcelona.com",
+            "tags": ["C", "C++", "Unix / Linux", "Algorithms", "Concurrency", "Network & HTTP", "Docker", "Full Stack", "Git / Github"]
+        },
+
+        {
+            "id": "ifp",
+            "src": "/assets/logos/ifp.webp",
+            "state": "Completed",
+            "git": null,
+            "game": null,
+            "web": "https://www.planetafp.es",
+            "tags": ["C", "C++", "JavaScript", "Phaser", "MySQL", "Unity", "C#", "Git / Github"]
+        }
+    ]
+}

@@ -1,0 +1,247 @@
+{
+    "header":
+    {
+        "work": "Desarrollador Web Full Stack & Ingeniero software",
+        "eslogan": "Construyo aplicaciones web modernas, escalables e interactivas."
+    },
+
+    "nav":
+    {
+        "about": "Sobre mi",
+        "web": "Web",
+        "software": "Software",
+        "game": "Videojuegos",
+        "devops": "Cloud y DevOps",
+        "education": "Formación"
+    },
+
+    "about":
+    {
+        "intro": "¡Hola! Soy **Adrià**, y me apasiona construir cosas. Soy un **desarrollador full stack** especializado en crear aplicaciones web modernas e interactivas utilizando **React, TypeScript, Node.js** y **PHP**. Me enorgullece escribir código limpio y escalable, transformando requisitos complejos en experiencias de usuario fluidas. ",
+        "main": "Mi base técnica está firmemente anclada en **42 Barcelona**, donde completé el exigente **Common Core**. Esta metodología me ha aportado una sólida capacidad de resolución de problemas, pensamiento algorítmico y una gran destreza para adaptarme a cualquier entorno tecnológico mediante el aprendizaje práctico. ",
+        "end": "Fuera de la pantalla del desarrollo web y de software, de vez en cuando rescato algún viejo proyecto de cuando experimentaba creando videojuegos (como aquel shooter en Unity 2D o puzles en 3D), manteniendo vivo ese gusto por la programación creativa."
+    },
+
+    "main":
+    {
+        "web": "Desarrollo Web",
+        "cloud": "Cloud y DevOps",
+        "software": "Ingeniería de Software",
+        "game": "Desarrollo de Videojuegos",
+        "education": "Formación y Trayectoria"
+    },
+
+    "footer": "Diseñado en **Excalidraw** y codificado localmente en **Visual Studio Code** por un servidor. Construido con **React, TypeScript** y **SCSS**, y desplegado en **GitHub Pages**.",
+
+    "download": "Descargar CV",
+
+    "cv":
+    {
+        "web": "CV Web Full Stack",
+        "php": "CV PHP Full Stack",
+        "software": "CV Software",
+        "game": "CV Videojuegos"
+    },
+
+    "toast":
+    {
+        "copy": "Correo copiado con éxito"
+    },
+
+    "error":
+    {
+        "toast": "useToast debe usarse dentro de un ToastProvider"
+    },
+
+    "status":
+    {
+        "build": "En desarrollo",
+        "ops": "En mantenimiento",
+        "finished": "Finalizado"
+    },
+
+    "card":
+    {
+        "code": "Código",
+        "site": "Sitio web",
+        "game": "Juego"
+    },
+
+    "work":
+    {
+        "lluna":
+        {
+            "date": "Junio - Julio 2026",
+            "title": "Sitio Web Llar d'Infants Escola Infantil La Lluna",
+            "work": "Desarrollador WordPress",
+            "company": "Llar d'Infants Escola Infantil La Lluna",
+            "location": "España, Barcelona",
+            "desc": "Mi primer proyecto profesional. Gestioné directamente la **relación con el cliente** para estructurar, diseñar y lanzar su web corporativa desde cero con WordPress y Elementor."
+        },
+        "codelive":
+        {
+            "date": "Mayo - Junio 2026",
+            "title": "Sitio Web Codelive",
+            "work": "Codelive - Desarrollador Web Full Stack",
+            "company": "CIFO Barcelona La Violeta",
+            "location": "España, Barcelona",
+            "desc": "Plataforma interactiva de aprendizaje. **Mi primer proyecto con Node.js**, donde desarrollé el backend y la función 'Probar uno mismo' para ejecutar código en vivo (HTML, CSS, JS, PHP y PostgreSQL)."
+        },
+        "pong":
+        {
+            "date": "Noviembre - Enero 2026",
+            "title": "Pong Github",
+            "work": "Pong - Desarrollador Frontend",
+            "company": "42 Barcelona (Common Core)",
+            "location": "España, Barcelona",
+            "desc": "Aplicación web interactiva. **Mi primer proyecto con React y TypeScript**, incorporando **chat en tiempo real**, partidas multijugador y un bot con IA como oponente."
+        },
+        "camagru":
+        {
+            "date": "Julio - Septiembre 2026",
+            "title": "Camagru Github",
+            "work": "Camagru - Desarrollador Web Full Stack",
+            "company": "42 Barcelona (Outer Core)",
+            "location": "España, Barcelona",
+            "desc": "Red social inspirada en Instagram. Destaca por su **módulo de procesamiento de imágenes** en el servidor para fusionar fotos con pegatinas, rotaciones y escalado dinámico."
+        }, 
+        "webforge":
+        {
+            "date": "Septiembre - En progreso",
+            "title": "En desarrollo",
+            "work": "WebForge - Desarrollador Web Full Stack",
+            "company": "Proyecto personal",
+            "location": "España, Barcelona",
+            "desc": "Página web para crear Html, Css y Js de forma rápida. Parecido a WordPress pero centrado en descargar páginas, componentes y paletas de colores."
+        },
+
+        "webserv":
+        {
+            "date": "Mayo - Julio 2025",
+            "title": "Webserv Github",
+            "work": "Webserv - Desarrollador de Software",
+            "company": "42 Barcelona",
+            "location": "España, Barcelona",
+            "desc": "Servidor web HTTP/1.1 desarrollado completamente en **C++98** desde cero. Implementa **I/O no bloqueante** (`epoll`/`select`), renderizado de CGI, gestión de sockets y métodos HTTP."
+        },
+        "inception":
+        {
+            "date": "Septiembre - Noviembre 2025",
+            "title": "Inception Github",
+            "work": "Inception - DevOps / Administrador de Sistemas",
+            "company": "42 Barcelona",
+            "location": "España, Barcelona",
+            "desc": "Infraestructura de servicios modular basada en **Docker y Docker Compose**. Configuración de un entorno multicontenedor seguro con Nginx, WordPress (FPM) y MariaDB bajo volúmenes persistentes y SSL/TLS."
+        },
+        "minirt":
+        {
+            "date": "Agosto - Noviembre 2024",
+            "title": "miniRT Github",
+            "work": "MiniRT - Desarrollador de Software",
+            "company": "42 Barcelona",
+            "location": "España, Barcelona",
+            "desc": "Motor de renderizado 3D por **trazado de rayos (Ray Tracing)** programado en C. Procesa iluminación básica, sombras, reflexiones y geometría 3D mediante cálculos vectoriales y algebraicos."
+        },
+        "philo":
+        {
+            "date": "Mayo - Agosto 2024",
+            "title": "Philosophers Github",
+            "work": "Philosophers - Desarrollador de C",
+            "company": "42 Barcelona",
+            "location": "España, Barcelona",
+            "desc": "Solución en C al clásico problema de los **Filósofos Comensales** sobre concurrencia. Implementa **hilos (threads)**, **mutexes** y mecanismos para prevenir *deadlocks* y condiciones de carrera."
+        },
+        "minishell":
+        {
+            "date": "Junio - Agosto 2024",
+            "title": "Minishell Github",
+            "work": "Minishell - Desarrollador de C",
+            "company": "42 Barcelona",
+            "location": "España, Barcelona",
+            "desc": "Recreación en C de una **shell ejecutable de Unix** (estilo Bash). Incluye un *parser* propio, gestión de **tuberías (pipes)**, redirecciones, variables de entorno y control de procesos (`fork`, `execve`)."
+        },
+
+        "scarecrow":
+        {
+            "date": "Enero - Julio 2022",
+            "title": "ScareCrow Studio",
+            "work": "Control de calidad (QA)",
+            "company": "ScareCrow Studio",
+            "location": "España, Sabadell",
+            "desc": ""
+        },
+        "play":
+        {
+            "date": "Abril - Junio 2022",
+            "title": "Play With Me",
+            "work": "Play With Me - Desarrollador de Unity 3D",
+            "company": "Planeta FP",
+            "location": "España, Hospitalet de Llobregat",
+            "desc": "Juego de puzles contrarreloj en **Unity 3D** donde encarnas a un juguete celoso que debe sabotear las nuevas pertenencias de su dueño (cómics, consolas, televisores...) antes de que el niño vuelva a la habitación. Como parte del equipo, desarrollé la zona de los cómics y la mecánica de interacción para destruirlos fue arrojándoles pintura."
+        },
+        "run":
+        {
+            "date": "Enero - Marzo 2022",
+            "title": "Run 3D",
+            "work": "Run 3D - Desarrollador de Unity 3D",
+            "company": "Planeta FP",
+            "location": "España, Hospitalet de Llobregat",
+            "desc": "Juego estilo **runner 3D** de ritmo rápido donde comienzas con un único personaje y debes multiplicar y guiar a tu multitud a través de un circuito lleno de obstáculos. El objetivo es calcular las mejores rutas, esquivar trampas letales y cruzar la línea de meta con el mayor número posible de supervivientes."
+        },
+        "escape":
+        {
+            "date": "Octubre - Diciembre 2021",
+            "title": "Escape from the Lab",
+            "work": "Escape from the Lab - Desarrollador de Unity 2D",
+            "company": "Planeta FP",
+            "location": "España, Hospitalet de Llobregat",
+            "desc": "Shooter de plataformas en **Unity 2D** con un fuerte enfoque en agilidad y precisión. Combina mecánicas de parkour y plataformas móviles con combate a distancia contra oleadas de enemigos y desafiantes jefes finales. Incluye un sistema de recompensas con cofres interactivos y objetos coleccionables."
+        },
+        "isaac":
+        {
+            "date": "Abril - Junio 2021",
+            "title": "Isaac",
+            "work": "Isaac - Desarrollador de Phaser",
+            "company": "Planeta FP",
+            "location": "España, Hospitalet de Llobregat",
+            "desc": "Recreación web en 2D inspirada en **The Binding of Isaac**, desarrollada con **JavaScript** (ES6) y **Phaser 3**. Incluye mecánicas de disparo direccional, sistema de colisiones por capas con Tiled, **IA** de enemigos por persecución, combate contra jefe final y diseño responsive."
+        },
+
+        "outer":
+        {
+            "date": "Febrero 2026 - En progreso",
+            "title": "42 Barcelona (Outer Core)",
+            "work": "Especialización: Full Stack Web & Cloud/DevOps",
+            "company": "42 Barcelona (Outer Core)",
+            "location": "España, Barcelona",
+            "desc": "Fase avanzada de especialización con foco en dos áreas complementarias: **Desarrollo Web Full Stack** (aplicaciones en tiempo real con WebSockets, streaming de vídeo, arquitectura MVC con Django y seguridad web) e **Infraestructura Cloud & DevOps** (despliegue en la nube, pipelines de CI/CD, supervisión de procesos y herramientas de diagnóstico de redes mediante raw sockets TCP/IP)."
+        },
+        "web":
+        {
+            "date": "Diciembre 2025 - Junio 2026",
+            "title": "Full Stack Web",
+            "work": "Desarrollador Web Full Stack",
+            "company": "CIFO Barcelona La Violeta",
+            "location": "España, Barcelona",
+            "desc": "Formación técnica intensiva centrada en el ciclo completo de desarrollo web (**Full Stack**). Construcción de aplicaciones interactivas y responsivas en el frontend (**HTML5, CSS3, JavaScript ES6+**), desarrollo backend y APIs con **PHP** y **Node.js**, modelado y consultas sobre bases de datos relacionales (**MySQL**) y gestión de estructuras de datos e intercambio con **JSON** y **XML**. Enfoque práctico en arquitecturas cliente-servidor, seguridad básica y desarrollo de proyectos reales."
+        },
+        "common":
+        {
+            "date": "Enero 2023 - Febrero 2026",
+            "title": "42 Barcelona (Common Core)",
+            "work": "Desarrollador de Software",
+            "company": "42 Barcelona (Common Core)",
+            "location": "España, Barcelona",
+            "desc": "Programa troncal intensivo centrado en algoritmia, sistemas y desarrollo de software sin librerías externas. Implementación desde cero en **C y C++** de proyectos de alta complejidad: arquitectura Unix (**Minishell**), concurrencia y multihilo (**Philosophers**), renderizado gráfico 3D (**MiniRT**), servidor HTTP con I/O no bloqueante (**Webserv**), virtualización con **Docker** (**Inception**) y desarrollo web interactivo en tiempo real (**Transcendence**)."
+        },
+        "ifp":
+        {
+            "date": "Septiembre 2020 - Junio 2022",
+            "title": "Planeta FP (Videojuegos)",
+            "work": "Desarrollador de videojuegos",
+            "company": "Planeta FP",
+            "location": "España, Hospitalet de Llobregat",
+            "desc": "Ciclo formativo de grado superior enfocado en el diseño, arquitectura y programación de aplicaciones interactivas y videojuegos 2D/3D. Desarrollo de lógica y mecánicas de juego en **Unity** con **C#** (arquitectura basada en componentes, físicas, control de estados e interfaces de usuario) y creación de juegos web interactivos mediante **Phaser** y **JavaScript**. Adquisición de bases sólidas en **Programación Orientada a Objetos** (**POO**), cálculo vectorial, optimización de recursos y metodologías ágiles de producción."
+        }
+    }
+}

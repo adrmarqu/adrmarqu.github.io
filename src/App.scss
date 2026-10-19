@@ -1,0 +1,59 @@
+/* ==========================================================================
+   App Layout & Global Structure
+   ========================================================================== */
+
+#root {
+    max-width: var(--max-content-width);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 3.5rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    position: relative;
+}
+
+/* Ambient Radial Background Glow */
+body::before {
+    content: '';
+    position: fixed;
+    top: -20%;
+    left: -10%;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--bg-accent) 0%, rgba(0, 0, 0, 0) 70%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+/* General Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.02em;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    #root {
+        padding: 2.5rem 2rem;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #root {
+        flex-direction: column;
+        padding: 2rem 1.25rem 4rem;
+        gap: 3.5rem;
+    }
+}
