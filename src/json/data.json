@@ -119,7 +119,7 @@
 
         {
             "id": "play",
-            "src": "/assets/previews/playwithme.webp",
+            "src": "/assets/previews/game/playwithme.webp",
             "state": "Under maintenance",
             "git": "https://github.com/adrmarqu/PlayWithMe",
             "web": null,
@@ -129,7 +129,7 @@
 
         {
             "id": "run",
-            "src": "/assets/previews/run3d.webp",
+            "src": "/assets/previews/game/run3d.webp",
             "state": "Completed",
             "git": "https://github.com/adrmarqu/Run3D",
             "web": null,
@@ -139,7 +139,7 @@
 
         {
             "id": "escape",
-            "src": "/assets/previews/escape.webp",
+            "src": "/assets/previews/game/escape.webp",
             "state": "Under maintenance",
             "git": "https://github.com/adrmarqu/EscapeFromTheLab2D",
             "web": null,
