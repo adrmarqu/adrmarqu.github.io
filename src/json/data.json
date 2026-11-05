@@ -121,7 +121,7 @@
             "id": "play",
             "src": "/assets/previews/playwithme.webp",
             "state": "Under maintenance",
-            "git": "https://github.com/adrmarqu/EscapeFromTheLab2D",
+            "git": "https://github.com/adrmarqu/PlayWithMe",
             "web": null,
             "game": null,
             "tags": ["Unity", "C#", "3D"]
@@ -141,7 +141,7 @@
             "id": "escape",
             "src": "/assets/previews/escape.webp",
             "state": "Under maintenance",
-            "git": null,
+            "git": "https://github.com/adrmarqu/EscapeFromTheLab2D",
             "web": null,
             "game": null,
             "tags": ["Unity", "C#", "2D"]
