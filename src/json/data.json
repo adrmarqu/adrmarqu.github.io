@@ -121,7 +121,7 @@
             "id": "play",
             "src": "/assets/previews/playwithme.webp",
             "state": "Under maintenance",
-            "git": null,
+            "git": "https://github.com/adrmarqu/EscapeFromTheLab2D",
             "web": null,
             "game": null,
             "tags": ["Unity", "C#", "3D"]
@@ -130,10 +130,10 @@
         {
             "id": "run",
             "src": "/assets/previews/run3d.webp",
-            "state": "Under maintenance",
-            "git": null,
+            "state": "Completed",
+            "git": "https://github.com/adrmarqu/Run3D",
             "web": null,
-            "game": null,
+            "game": "https://adrmarqu.itch.io/run3d",
             "tags": ["Unity", "C#", "3D"]
         },
 
