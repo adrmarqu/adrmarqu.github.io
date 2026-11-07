@@ -207,6 +207,15 @@
             "desc": "2D web game recreation inspired by **The Binding of Isaac**, built with **JavaScript** (ES6) and **Phaser 3**. Features directional shooting mechanics, layer collision system with Tiled, enemy pursuit **AI**, boss battles, and a responsive design."
         },
 
+        "it":
+        {
+            "date": "November 2026 - In progress",
+            "title": "IT Academy",
+            "work": "Python Developer",
+            "company": "IT Academy",
+            "location": "Spain, Barcelona",
+            "desc": "Training in the fundamentals of programming with **Python**: syntax, expressions and operators, data input, and flow control (**conditional and repetitive structures**). Work with lists, design of modular **functions**, and development under the **Object-Oriented Programming (OOP)** paradigm for practical algorithmic problem-solving."
+        },
         "outer":
         {
             "date": "February 2026 - In progress",

@@ -207,6 +207,15 @@
             "desc": "Recreació web en 2D inspirada en **The Binding of Isaac**, desenvolupada amb **JavaScript** (ES6) i **Phaser 3**. Inclou mecàniques de tir direccional, sistema de col·lisions per capes amb Tiled, **IA** d'enemics per persecució, combat contra cap final i disseny responsive."
         },
 
+        "it":
+        {
+            "date": "Novembre 2026 - En progrés",
+            "title": "IT Academy",
+            "work": "Desenvolupador de Python",
+            "company": "IT Academy",
+            "location": "España, Barcelona",
+            "desc": "Formació en els fonaments de la programació amb **Python**: sintaxi, expressions i operadors, entrada de dades i control de flux (**estructures condicionals i repetitives**). Ús de llistes, disseny de **funcions** modulars i desenvolupament sota el paradigma de **Programació Orientada a Objectes (POO)** per a la resolució pràctica de problemes algorítmics."
+        },
         "outer":
         {
             "date": "Febrer 2026 - En progrés",
