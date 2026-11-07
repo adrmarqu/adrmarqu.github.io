@@ -161,6 +161,15 @@
     "education":
     [
         {
+            "id": "it",
+            "src": "/assets/logos/it.webp",
+            "state": "Completed",
+            "git": null,
+            "game": null,
+            "web": "https://itacademy.barcelonactiva.cat",
+            "tags": ["Python", "POO"]
+        },
+        {
             "id": "outer",
             "src": "/assets/logos/42.webp",
             "state": "Completed",
