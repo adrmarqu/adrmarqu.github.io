@@ -140,7 +140,7 @@
         {
             "id": "escape",
             "src": "/assets/previews/game/escape.webp",
-            "state": "Under maintenance",
+            "state": "Completed",
             "git": "https://github.com/adrmarqu/EscapeFromTheLab2D",
             "web": null,
             "game": "https://adrmarqu.itch.io/escapethelab2d",
