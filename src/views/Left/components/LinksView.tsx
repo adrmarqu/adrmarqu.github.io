@@ -11,7 +11,7 @@ function LinksView()
     const { t } = useTranslation();
 
     const iconSize = 20;
-    const email = "adria.marquez.3b@gmail.com";
+    const email = "adrmarqu42@gmail.com";
 
     const copyEmail = async () =>
     {
