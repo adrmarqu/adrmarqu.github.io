@@ -10,6 +10,7 @@ type LinkProps =
 const CV_MAP: Record<string, string> = {
     fullstack: "Adria_Marquez_CV_FullStack.pdf",
     php: "Adria_Marquez_CV_PHP.pdf",
+    software: "Adria_Marquez_CV_Software.pdf"
 };
  
 function LinkScreen({ children, filename, lang }: LinkProps)
