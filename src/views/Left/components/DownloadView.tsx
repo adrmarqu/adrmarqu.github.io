@@ -14,6 +14,9 @@ function DownloadView()
                 <LinkScreen lang={cvLang} filename="fullstack">
                     {t('cv.web')}
                 </LinkScreen>
+                <LinkScreen lang={cvLang} filename="software">
+                    {t('cv.software')}
+                </LinkScreen>
                 {/* <LinkScreen lang={cvLang} filename="php">
                     {t('cv.php')}
                 </LinkScreen>
